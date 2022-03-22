@@ -1,0 +1,37 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:15380",
+      "sslPort": 44322
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CONNECTION_STRING": "mongodb://localhost:27017",
+        "DATABASE_NAME": "DBCustomerApp",
+        "COLLECTION_NAME": "Customers"
+      }
+    },
+    "RestApiCrudDemo": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CONNECTION_STRING": "mongodb://localhost:27017",
+        "DATABASE_NAME": "DBCustomerApp",
+        "COLLECTION_NAME": "Customers"
+      }
+    }
+  }
+}
